@@ -1,21 +1,62 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+/* Banner Component */
+.background {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  .teaser {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(218, 216, 216);
+    opacity: 0.6;
+    margin-bottom: 30px;
+  }
+  .margin {
+    margin-top: 20px;
+  }
+
+  .button {
+    margin-top: 60px;
+  }
+/* Banner Component */
+
+/* Card Component */
+.card-outer-border {
+  margin: 10px;
+  border: 0.5px solid rgb(145, 145, 145);
+  border-radius: 10px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.card-header-item {
+  background-color: rgb(145, 145, 145);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.card-line {
+  border-top: 0.5px solid rgb(145, 145, 145);
 }
 
-.usermotto {
-  margin-top: 200px;
+.card-body-item {
+  padding: 15px;
+  color: rgb(73, 73, 73);
+  font-size: 16px;
+  text-align: center;
 }
+
+/* Card Component */
