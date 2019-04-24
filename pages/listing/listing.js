@@ -6,33 +6,33 @@ Page({
    */
   data: {
     product: [{
-      name:"Best tomatoes",
-      description:"Red and nice",
-      price:"$49.99"
+        picture: "../../Img/listing_1.jpg",
+        name:"Best tomatoes",
+        price:"$49.99"
       },
       {
+        picture: "../../Img/listing_1.jpg",
         name: "Best tomatoes",
-        description: "Red and nice",
         price: "$49.99"
       },
       {
+        picture: "../../Img/listing_1.jpg",
         name: "Best tomatoes",
-        description: "Red and nice",
         price: "$49.99"
       },
       {
+        picture: "../../Img/listing_1.jpg",
         name: "Best tomatoes",
-        description: "Red and nice",
         price: "$49.99"
       },
       {
+        picture: "../../Img/listing_1.jpg",
         name: "Best tomatoes",
-        description: "Red and nice",
         price: "$49.99"
       },
       {
+        picture: "../../Img/listing_1.jpg",
         name: "Best tomatoes",
-        description: "Red and nice",
         price: "$49.99"
       }]
   },

@@ -9,7 +9,29 @@
     background-size: cover !important;
   }
 
-  .product {
+  .container {
+    display: flex;
+    display: grid;
+    margin-left: 10px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+  .card {
+    border-radius: 1px;
+  }
+
+  .picture {
+    width: 23vh;
+    height: 20vh;
+    background-size: cover;
+  }
+
+    .product-img {
       color: white;
       text-align:;
       height: 20vh;
@@ -18,16 +40,10 @@
       background-size: cover !important;
   }
 
-  .product-name {
+    .product-name {
 
   }
 
   .product-info {
     padding: 20px;
-  }
-
-  .listing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }

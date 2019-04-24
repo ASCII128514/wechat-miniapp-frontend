@@ -6,7 +6,6 @@ const app = getApp()
 
 Page({
   data: {
-    items: []
   },
 
   buttonClicked: function() {
@@ -19,7 +18,6 @@ Page({
 
     // Fetch Items from GlobalData
     this.setData({
-      items: app.globalData.items
     })
 
 
