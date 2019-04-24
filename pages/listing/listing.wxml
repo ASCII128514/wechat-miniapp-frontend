@@ -1,22 +1,18 @@
 <!--pages/listing/listing.wxml-->
 <view class="background" style="background-image: linear-gradient(-200deg, rgba(0,90,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../Img/landing.png');">
-    
-<button>Create a new product</button>   
- 
   <view class="container"> 
+    <button bindtap="toNew" class="newButton">Create a new product</button> 
     <view class="cards">
-
-      <block wx:for="{{products}}" 
-      wx:for-item="product">
-        <view class="card">
-          <image class="picture" src="{{product.picture}}"></image>
-            <view class="product-info">
-              <view class="product-name">{{product.name}}</view>
-              <view class="product-price">{{product.price}}</view>
-            </view>
-        </view>  
-      </block> 
-     
+        <block wx:for="{{products}}" 
+        wx:for-item="product">
+          <view class="card">
+            <image class="picture" src="{{product.picture}}"></image>
+              <view class="product-info">
+                <view class="product-name">{{product.name}}</view>
+                <view class="product-price">{{product.price}}</view>
+              </view>
+          </view>  
+        </block> 
     </view>
   </view> 
 </view>

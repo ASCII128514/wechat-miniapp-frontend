@@ -15,6 +15,12 @@
     margin-left: 10px;
   }
 
+  .newButton {
+  border-radius: 5px;
+  margin-bottom: 35px;
+  background-color: aqua;
+}
+
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,6 +29,8 @@
 
   .card {
     border-radius: 1px;
+    border: 1px solid green;
+    border-radius: 5px;
   }
 
   .picture {
@@ -40,10 +48,7 @@
       background-size: cover !important;
   }
 
-    .product-name {
-
-  }
-
   .product-info {
-    padding: 20px;
+    padding: 8px;
+    font-size: 15px;
   }

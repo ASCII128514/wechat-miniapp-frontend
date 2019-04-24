@@ -6,35 +6,42 @@ Page({
    */
   data: {
     products: [{
-        picture: "../../Img/listing_1.jpg",
-        name:"Best tomatoes",
+        picture: "../../Img/listing_1.jpeg",
+        name:"Best spinch",
         price:"$49.99"
       },
       {
-        picture: "../../Img/listing_2.jpg",
-        name: "Best veggie",
-        price: "$49.99"
-      },
-      {
-        picture: "../../Img/listing_1.jpg",
+        picture: "../../Img/listing_2.jpeg",
         name: "Best tomatoes",
         price: "$49.99"
       },
       {
-        picture: "../../Img/listing_1.jpg",
+        picture: "../../Img/listing_1.jpeg",
         name: "Best tomatoes",
         price: "$49.99"
       },
       {
-        picture: "../../Img/listing_1.jpg",
+        picture: "../../Img/listing_2.jpeg",
         name: "Best tomatoes",
         price: "$49.99"
       },
       {
-        picture: "../../Img/listing_1.jpg",
+        picture: "../../Img/listing_1.jpeg",
+        name: "Best tomatoes",
+        price: "$49.99"
+      },
+      {
+        picture: "../../Img/listing_2.jpeg",
         name: "Best tomatoes",
         price: "$49.99"
       }]
+  },
+
+  //  button to sell page
+  toNew: function () {
+    wx.navigateTo({
+      url: '/pages/add_product/add_product'
+    })
   },
 
   /**

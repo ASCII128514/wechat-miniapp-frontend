@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/landing/landing",
-    "pages/listing/listing"
+    "pages/listing/listing",
+    "pages/add_product/add_product"
   ],
   "window": {
     "backgroundTextStyle": "light",
