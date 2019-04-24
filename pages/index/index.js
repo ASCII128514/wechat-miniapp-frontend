@@ -14,12 +14,6 @@ Page({
     })
   },
 
-  onLoad: function () {
-
-    // Fetch Items from GlobalData
-    this.setData({
-    })
-
-
-  }
+  onLoad: function (options) {
+  },
 })
