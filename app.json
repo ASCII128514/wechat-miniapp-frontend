@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/landing/landing"
+    "pages/landing/landing",
+    "pages/listing/listing"
   ],
   "window":{
     "backgroundTextStyle":"light",
