@@ -1,75 +1,22 @@
 <!--pages/listing/listing.wxml-->
 <view class="background" style="background-image: linear-gradient(-200deg, rgba(0,90,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../Img/landing.png');">
     
+<button>Create a new product</button>   
+ 
   <view class="container"> 
     <view class="cards">
 
-  
-    
-      <view class="card">
-        <image class="picture" src="{{product[0].picture}}"></image>
-          <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-          </view>
-      </view>
+      <block wx:for="{{products}}" 
+      wx:for-item="product">
+        <view class="card">
+          <image class="picture" src="{{product.picture}}"></image>
+            <view class="product-info">
+              <view class="product-name">{{product.name}}</view>
+              <view class="product-price">{{product.price}}</view>
+            </view>
+        </view>  
+      </block> 
      
-      <view class="card">
-        <image class="picture" src="../../Img/listing_2.jpg"></image>
-        <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-        </view>
-      </view>
-
-      <view class="card">
-        <image class="picture" src="{{product[0].picture}}"></image>
-          <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-          </view>
-      </view>
-
-      <view class="card">
-        <image class="picture" src="{{product[0].picture}}"></image>
-          <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-          </view>
-      </view>
-
-      <view class="card">
-        <image class="picture" src="{{product[0].picture}}"></image>
-          <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-          </view>
-      </view>
-
-      <view class="card">
-        <image class="picture" src="{{product[0].picture}}"></image>
-          <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-          </view>
-      </view>
-
-      <view class="card">
-        <image class="picture" src="{{product[0].picture}}"></image>
-          <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-          </view>
-      </view>
-
-      <view class="card">
-        <image class="picture" src="{{product[0].picture}}"></image>
-          <view class="product-info">
-            <view class="product-name">{{product[0].name}}</view>
-            <view class="product-price">{{product[0].price}}</view>
-          </view>
-      </view>
-
     </view>
   </view> 
 </view>

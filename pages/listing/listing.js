@@ -5,14 +5,14 @@ Page({
    * Page initial data
    */
   data: {
-    product: [{
+    products: [{
         picture: "../../Img/listing_1.jpg",
         name:"Best tomatoes",
         price:"$49.99"
       },
       {
-        picture: "../../Img/listing_1.jpg",
-        name: "Best tomatoes",
+        picture: "../../Img/listing_2.jpg",
+        name: "Best veggie",
         price: "$49.99"
       },
       {
