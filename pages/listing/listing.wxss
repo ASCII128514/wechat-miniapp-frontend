@@ -1,1 +1,33 @@
 /* pages/listing/listing.wxss */
+
+.background {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+  }
+
+  .product {
+      color: white;
+      text-align:;
+      height: 20vh;
+      width: 100%;
+      /* if you have a 70px navbar => height: calc(100vh - 70px); */
+      background-size: cover !important;
+  }
+
+  .product-name {
+
+  }
+
+  .product-info {
+    padding: 20px;
+  }
+
+  .listing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

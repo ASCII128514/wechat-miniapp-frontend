@@ -5,6 +5,6 @@
   <view>
     <view class='title'>First, let us know what you want</view>
     <button class="buyButton">I want to buy</button>
-    <button class="sellButton">I want to sell</button>
+    <button bindtap="toSell" class="sellButton">I want to sell</button>
   </view>
 </view>

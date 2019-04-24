@@ -5,7 +5,36 @@ Page({
    * Page initial data
    */
   data: {
-
+    product: [{
+      name:"Best tomatoes",
+      description:"Red and nice",
+      price:"$49.99"
+      },
+      {
+        name: "Best tomatoes",
+        description: "Red and nice",
+        price: "$49.99"
+      },
+      {
+        name: "Best tomatoes",
+        description: "Red and nice",
+        price: "$49.99"
+      },
+      {
+        name: "Best tomatoes",
+        description: "Red and nice",
+        price: "$49.99"
+      },
+      {
+        name: "Best tomatoes",
+        description: "Red and nice",
+        price: "$49.99"
+      },
+      {
+        name: "Best tomatoes",
+        description: "Red and nice",
+        price: "$49.99"
+      }]
   },
 
   /**

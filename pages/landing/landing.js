@@ -7,6 +7,13 @@ Page({
   data: {
 
   },
+ 
+//  button to sell page
+  toSell: function () {
+    wx.navigateTo({
+      url: '/pages/listing/listing'
+    })
+  },
 
   /**
    * Lifecycle function--Called when page load
