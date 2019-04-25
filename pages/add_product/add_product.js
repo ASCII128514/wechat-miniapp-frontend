@@ -1,4 +1,5 @@
 // pages/add_product/add_product.js
+import { createProduct } from '../../utils/api_client.js';
 Page({
 
   /**
@@ -12,7 +13,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    createProduct(this);
   },
 
   /**
