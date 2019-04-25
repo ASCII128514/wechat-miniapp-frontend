@@ -97,8 +97,10 @@ const shopperShow = function (page) {
       success: res => {
         console.log(res)
         const product = res.data["user"];
+        const farmer = res.data["farmer"];
         console.log(product)
         getApp().globalData.productInfo = product
+        getApp().globalData.farmerInfo = farmer
         console.log(getApp().globalData.productInfo)
         // Update local data
         console.log(page.data);

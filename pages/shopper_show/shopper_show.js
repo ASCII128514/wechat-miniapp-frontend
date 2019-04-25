@@ -20,9 +20,11 @@ Page({
    */
   onLoad: function (options) {
     this.setData({ 
-      product: getApp().globalData.productInfo
+      product: getApp().globalData.productInfo,
+      farmer: getApp().globalData.farmerInfo
     })
     getApp().globalData.productInfo = null;
+    getApp().globalData.farmerInfo = null;
     console.log(this.data.product.product_name)
   },
 
