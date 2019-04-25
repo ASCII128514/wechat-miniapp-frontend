@@ -1,18 +1,19 @@
 // pages/shopper_show/shopper_show.js
+// import { shopperShow } from '../../utils/api_client.js';
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    product: {
-      name: "Best spinach",
-      price: "$49.99",
-      description: "the greenest spinach",
-      farmer: "Mr. Awesome",
-      category: "Vegetable",
-      picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
-    },
+    // product: {
+    //   name: "Best spinach",
+    //   price: "$49.99",
+    //   description: "the greenest spinach",
+    //   farmer: "Mr. Awesome",
+    //   category: "Vegetable",
+    //   picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
+    // },
   },
 
   /**
@@ -27,6 +28,13 @@ Page({
     wx.setNavigationBarTitle({
       title: 'The most expensive tomato',
     })
+    this.setData({
+      product: getApp().globalData.productInfo,
+      farmer: getApp().globalData.farmerInfo
+    })
+    getApp().globalData.productInfo = null;
+    getApp().globalData.farmerInfo = null;
+    console.log(this.data.product.product_name)
   },
 
   previewImage: function(e) {

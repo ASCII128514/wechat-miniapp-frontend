@@ -9,7 +9,7 @@
     <!-- PRIDUCT - IMAGE -->
     <view
       style='width:100vw; height:60vw; background-image: url({{product.picture_url}})'
-      class="product-picture" 
+      class="product-picture"
       bindtap='previewImage'
       data-image='{{product.picture_url}}'
     />
@@ -18,7 +18,7 @@
     <view style='padding:30rpx; padding-top:60rpx; border-bottom:1px solid rgba(255,255,255,0.3);'>
       <!-- Farmer -->
       <view class='title'>Farmer</view>
-      <view class='teaser'>{{product.farmer}}</view>
+      <view class='teaser'>{{farmer.name}}</view>
       <view style='height:30rpx;'/>
       <!-- Description -->
       <view class="title">Description</view>
@@ -31,6 +31,7 @@
     </view>
     <!-- BODY -->
 
+
     <!-- QUANTITY -->
     <view class='quantity__flex' style='display:flex; justify-content:space-between; padding:60rpx 30rpx;  border-bottom:1px solid rgba(255,255,255,0.3);'>
       <view>
@@ -38,6 +39,7 @@
         <text class='teaser' style='margin-left:40rpx;'>KG</text>
       </view>
       <view>Quantity</view>
+
     </view>
     <!-- QUANTITY -->
 
@@ -68,7 +70,7 @@
     </view>
     <!-- PURCHASE -->
 
-    
+
   </view>
   <!-- CONTAINER -->
 
