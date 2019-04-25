@@ -1,4 +1,5 @@
 // pages/add_product/add_product.js
+import { createProduct } from '../../utils/api_client.js';
 Page({
 
   /**
@@ -7,13 +8,15 @@ Page({
   data: {
 
   },
+  formSubmit: (e) => {
+    createProduct(e);
+  },
 
   
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
   },
 
   /**
