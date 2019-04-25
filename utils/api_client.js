@@ -44,6 +44,9 @@ const createProduct = function (page) {
           "description": page.detail.value.description
         },
         "quantity": page.detail.value.inventory
+        },
+        success: (res) => {
+          console.log(res)
         }
       })
   }    
