@@ -6,11 +6,12 @@ Page({
    */
   data: {
     product: {
-      picture_url: "../../Img/listing_1.jpeg",
-      product_name: "Best spinach",
-      product_price: "$49.99",
-      product_description: "the greenest spinach",
-      product_farmer: "Mr. Awesome"
+      name: "Best spinach",
+      price: "$49.99",
+      description: "the greenest spinach",
+      farmer: "Mr. Awesome",
+      category: "Vegetable",
+      picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
     },
   },
 
@@ -18,9 +19,25 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: '#f1dede',
+    })
 
+    wx.setNavigationBarTitle({
+      title: 'The most expensive tomato',
+    })
   },
 
+  previewImage: function(e) {
+    // console.log('previewImage', e)
+    const image = e.currentTarget.dataset.image;
+
+    wx.previewImage({
+      urls: [image],
+    })
+
+  },
   /**
    * Lifecycle function--Called when page is initially rendered
    */
