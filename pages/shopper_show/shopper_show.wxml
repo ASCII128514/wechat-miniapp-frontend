@@ -1,30 +1,77 @@
 <!--pages/shopper_show/shopper_show.wxml-->
-<view class="background" style="background-image: linear-gradient(-200deg, rgba(0,90,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../Img/landing.png');">
+<view class="background" style="background-image: linear-gradient(-200deg, rgba(240,220,220,0.95) 0%, rgba(240,220,220,0.95) 50%), url('../../Img/landing.png');">
+
+ <!-- CONTAINER -->
  <view class="container">
- 
-    <view class="toCart">
-      <button>Go to my cart</button>
-    </view>
 
-  
-    <view class="title">{{product.product_name}}</view>
-    <view class="price">{{product.product_price}}</view>
-    <image class="picture" src="{{product.picture_url}}"></image>
-    <view class="product_info">
-      <view class="Farmer"> Farmer
-        <view>{{farmer.name}}</view>
-      </view>
-      <view class="description"> Description
-        <view>{{product.description}}</view>
-      </view>
-    
+    <view style='height:50rpx;'/>
+
+    <!-- PRIDUCT - IMAGE -->
+    <view
+      style='width:100vw; height:60vw; background-image: url({{product.picture_url}})'
+      class="product-picture"
+      bindtap='previewImage'
+      data-image='{{product.picture_url}}'
+    />
+
+    <!-- BODY -->
+    <view style='padding:30rpx; padding-top:60rpx; border-bottom:1px solid rgba(255,255,255,0.3);'>
+      <!-- Farmer -->
+      <view class='title'>Farmer</view>
+      <view class='teaser'>{{farmer.name}}</view>
+      <view style='height:30rpx;'/>
+      <!-- Description -->
+      <view class="title">Description</view>
+      <view class="teaser">{{product.description}}</view>
+      <view style='height:30rpx;'/>
+      <!-- Category -->
+      <view class="title">Castegory</view>
+      <view class="teaser">{{product.category}}</view>
+      <view style='height:30rpx;'/>
     </view>
-  
-  
-  
-  
+    <!-- BODY -->
+
+
+    <!-- QUANTITY -->
+    <view class='quantity__flex' style='display:flex; justify-content:space-between; padding:60rpx 30rpx;  border-bottom:1px solid rgba(255,255,255,0.3);'>
+      <view>
+        <text class='title'>Measure</text>
+        <text class='teaser' style='margin-left:40rpx;'>KG</text>
+      </view>
+      <view>Quantity</view>
+
+    </view>
+    <!-- QUANTITY -->
+
+    <!-- PURCHASE -->
+    <view style='display:flex; height:200rpx; border-bottom:1px solid rgba(255,255,255,0.3); justify-content:center; align-items:center;'>
+      <!-- PRICE -->
+      <view style=' flex-basis:40vw; text-align:center;'>
+        <text style='font-size:100rpx; font-weight:bolder; color:#515C6F;'>¥50</text>
+      </view>
+      <!-- PRICE -->
+
+      <!-- BUTTONS -->
+      <view style=' flex-basis:60vw; '>
+        <view style='display:flex; justify-content:center;'>
+          <view class='cart-button'style='background-color:#FF6969; width:180rpx; height:110rpx;'>
+              <view style='display:flex; width:180rpx; height:110rpx; justify-content:center; align-items:center'>
+                <view style='color:white; font-size:40rpx; font-weight:bolder;'>CART</view>
+              </view>
+          </view>
+          <view class='buy-button' style='background-color:#882F2F; width:180rpx; height:110rpx;'>
+              <view style='display:flex; width:180rpx; height:110rpx; justify-content:center; align-items:center'>
+                <view style='color:white; font-size:40rpx; font-weight:bolder;'>BUY</view>
+              </view>
+          </view>
+        </view>
+      </view>
+      <!-- BUTTONS -->
+    </view>
+    <!-- PURCHASE -->
+
+
   </view>
-
-
+  <!-- CONTAINER -->
 
 </view>
