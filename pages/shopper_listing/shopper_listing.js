@@ -1,4 +1,5 @@
 // pages/shopper_listing/shopper_listing.js
+import { shopperIndex } from '../../utils/api_client.js';
 Page({
 
   /**
@@ -41,7 +42,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    shopperIndex(this);
   },
 
   /**
