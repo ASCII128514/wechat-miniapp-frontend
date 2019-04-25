@@ -6,10 +6,10 @@
         <block wx:for="{{products}}" 
         wx:for-item="product">
           <view class="card">
-            <image class="picture" src="{{product.picture}}"></image>
+            <image class="picture" src="{{product.picture_url}}"></image>
               <view class="product-info">
-                <view class="product-name">{{product.name}}</view>
-                <view class="product-price">{{product.price}}</view>
+                <view class="product-name">{{product.product_name}}</view>
+                <view class="product-price">{{product.product_price}}</view>
               </view>
           </view>  
         </block> 
