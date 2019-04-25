@@ -8,3 +8,6 @@
     <button bindtap="toSell" class="sellButton">I want to sell</button>
   </view>
 </view>
+
+
+

@@ -33,35 +33,42 @@
 
 
     <!-- QUANTITY -->
-    <view class='quantity__flex' style='display:flex; justify-content:space-between; padding:60rpx 30rpx;  border-bottom:1px solid rgba(255,255,255,0.3);'>
+    <view class='quantity__flex'>
       <view>
         <text class='title'>Measure</text>
         <text class='teaser' style='margin-left:40rpx;'>KG</text>
       </view>
-      <view>Quantity</view>
 
-    </view>
+      <view class="dian">
+        <view class="cun page_row">Amount:</view>
+          <view class="stepper">
+              <text bindtap="bindMinus">-</text>
+                <input type="number" bindchange="pay_num" value="{{buy_num}}" />
+              <text bindtap="bindPlus">+</text>
+          </view> 
+        </view>
+      </view>
     <!-- QUANTITY -->
 
     <!-- PURCHASE -->
-    <view style='display:flex; height:200rpx; border-bottom:1px solid rgba(255,255,255,0.3); justify-content:center; align-items:center;'>
+    <view class="checkout_bar">
       <!-- PRICE -->
       <view style=' flex-basis:40vw; text-align:center;'>
-        <text style='font-size:100rpx; font-weight:bolder; color:#515C6F;'>¥{{product.product_price}}</text>
+        <text class="dollar">¥{{product.product_price}}</text>
       </view>
       <!-- PRICE -->
 
       <!-- BUTTONS -->
       <view style=' flex-basis:60vw; '>
         <view style='display:flex; justify-content:center;'>
-          <view class='cart-button'style='background-color:#FF6969; width:180rpx; height:110rpx;'>
-              <view style='display:flex; width:180rpx; height:110rpx; justify-content:center; align-items:center'>
-                <view style='color:white; font-size:40rpx; font-weight:bolder;'>CART</view>
+          <view class='cart-button'>
+              <view class="button-position">
+                <view class="cart_text" >ADD</view>
               </view>
           </view>
-          <view class='buy-button' style='background-color:#882F2F; width:180rpx; height:110rpx;'>
-              <view style='display:flex; width:180rpx; height:110rpx; justify-content:center; align-items:center'>
-                <view style='color:white; font-size:40rpx; font-weight:bolder;'>BUY</view>
+          <view class='buy-button'>
+              <view class="button-position">
+                <view class="buy_text" bindtap="toCart">PAY</view>
               </view>
           </view>
         </view>
@@ -69,9 +76,6 @@
       <!-- BUTTONS -->
     </view>
     <!-- PURCHASE -->
-
-
   </view>
   <!-- CONTAINER -->
-
 </view>

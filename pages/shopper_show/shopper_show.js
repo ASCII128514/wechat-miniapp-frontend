@@ -16,6 +16,12 @@ Page({
     // },
   },
 
+  toCart: function () {
+    wx.navigateTo({
+      url: '/pages/cart/cart'
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */

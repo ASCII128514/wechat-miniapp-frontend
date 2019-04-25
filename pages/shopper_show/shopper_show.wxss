@@ -41,14 +41,105 @@
   color: #070606; font-size:35rpx; font-weight:light;
 }
 
+.quantity__flex {
+  display:flex; 
+  justify-content:space-between; 
+  padding:60rpx 30rpx;  
+  border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+.dollar {
+  font-size:100rpx; 
+  font-weight:bolder; 
+  color:#515C6F;
+}
+
+.checkout_bar {
+  display:flex; 
+  height:200rpx; 
+  border-bottom:1px solid rgba(255,255,255,0.3); 
+  justify-content:center; 
+  align-items:center;
+}
+
 .cart-button {
   border-top-left-radius: 100rpx;
   border-bottom-left-radius: 100rpx;
   box-shadow:0 4px 4px rgba(255, 105, 105, 0.3), 0 0 40px rgba(255, 105, 105, 0.4) inset;
+  background-color:#FF6969; 
+  width:180rpx; 
+  height:110rpx;
+}
+
+.cart_text {
+  color:white; 
+  font-size:40rpx; 
+  font-weight:bolder;
 }
 
 .buy-button {
   border-top-right-radius: 100rpx;
   border-bottom-right-radius: 100rpx;
   box-shadow:0 4px 4px rgba(255, 105, 105, 0.3), 0 0 40px rgba(255, 105, 105, 0.4) inset;
+  background-color:#882F2F; 
+  width:180rpx; 
+  height:110rpx;
+}
+
+.buy_text {
+  color:white; 
+  font-size:40rpx; 
+  font-weight:bolder;
+}
+
+.button-position {
+  display:flex; 
+  width:180rpx; 
+  height:110rpx; 
+  justify-content:center; 
+  align-items:center;
+}
+
+/*数量*/
+.dian{
+  width: 60%;
+  display: flex;
+  margin-left: 120rpx;
+}
+.cun{
+  margin: 5px;
+  font-size:30rpx; 
+  width: 25%;
+  color: #7c7676;
+}
+.stepper {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 200rpx; */
+  overflow: hidden;
+  margin-left: 50rpx;
+  border-radius:20rpx; 
+  background: #f2f2f2;
+}
+.stepper text {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius:50%; 
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 900;
+  color: #939393;
+}
+.stepper input {
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  /*background-color: #f2f2f2;*/
+  /*border-top:  1px solid #666;
+  border-bottom:  1px solid #666;*/
 }
