@@ -1,25 +1,40 @@
-// pages/landing/landing.js
+// pages/shopper_listing/shopper_listing.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
-  },
- 
-//  button to sell page
-  toSell: function () {
-    wx.navigateTo({
-      url: '/pages/listing/listing'
-    })
-  },
-
-  //  button to buy page
-  toBuy: function () {
-    wx.navigateTo({
-      url: '/pages/shopper_listing/shopper_listing'
-    })
+    products: [{
+      picture: "../../Img/listing_1.jpeg",
+      name: "Best spinch",
+      price: "$49.99"
+    },
+    {
+      picture: "../../Img/listing_2.jpeg",
+      name: "Best tomatoes",
+      price: "$49.99"
+    },
+    {
+      picture: "../../Img/listing_1.jpeg",
+      name: "Best tomatoes",
+      price: "$49.99"
+    },
+    {
+      picture: "../../Img/listing_2.jpeg",
+      name: "Best tomatoes",
+      price: "$49.99"
+    },
+    {
+      picture: "../../Img/listing_1.jpeg",
+      name: "Best tomatoes",
+      price: "$49.99"
+    },
+    {
+      picture: "../../Img/listing_2.jpeg",
+      name: "Best tomatoes",
+      price: "$49.99"
+    }]
   },
 
   /**

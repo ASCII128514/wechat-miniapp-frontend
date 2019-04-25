@@ -1,25 +1,17 @@
-// pages/landing/landing.js
+// pages/shopper_show/shopper_show.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
-  },
- 
-//  button to sell page
-  toSell: function () {
-    wx.navigateTo({
-      url: '/pages/listing/listing'
-    })
-  },
-
-  //  button to buy page
-  toBuy: function () {
-    wx.navigateTo({
-      url: '/pages/shopper_listing/shopper_listing'
-    })
+    product: {
+      picture_url: "../../Img/listing_1.jpeg",
+      product_name: "Best spinach",
+      product_price: "$49.99",
+      product_description: "the greenest spinach",
+      product_farmer: "Mr. Awesome"
+    },
   },
 
   /**
