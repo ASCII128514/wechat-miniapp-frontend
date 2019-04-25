@@ -2,7 +2,7 @@
 <view class="background" style="background-image: linear-gradient(-200deg, rgba(0,90,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../Img/landing.png');">
   <view class="container"> 
     <button bindtap="toNew" class="newButton">Create a new product</button> 
-    <view class="cards">
+    <scroll-view class="cards">
         <block wx:for="{{products}}" 
         wx:for-item="product">
           <view class="card">
@@ -13,7 +13,7 @@
               </view>
           </view>  
         </block> 
-    </view>
+    </scroll-view>
   </view> 
 </view>
 

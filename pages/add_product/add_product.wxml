@@ -1,2 +1,41 @@
 <!--pages/add_product/add_product.wxml-->
-<text>pages/add_product/add_product.wxml</text>
+
+<view class="background" style="background-image: linear-gradient(-200deg, rgba(0,90,120,0.6) 0%, rgba(0,50,90,0.6) 100%), url('../../Img/landing.png');">
+  <view class="page">
+      <view class="title"><text class>New Product</text></view>
+        <view class="container">
+          <form class="form" bindsubmit="formSubmit" bindreset="formReset">
+            <button class="newPictureButton" bindtap="newPicture" >Add a picture</button>
+            <view class="section">
+              <view class="section__title">Product name</view>
+              <input name="name" placeholder="product name" />
+            </view>
+            <view class="section">
+              <view class="section__title">Description</view>
+              <input name="description" placeholder="Description" description/>
+            </view>
+            <view class="section">
+              <view class="section__title">Price</view>
+              <input name="price" placeholder="Price CNY" price/>
+            </view>
+            <view class="section">
+              <view class="section__title">Inventory</view>
+              <input name="inventory" placeholder="available quantity" inventory/>
+            </view>
+            <view class="section section_gap">
+              <view class="section__title">Unit</view>
+              <radio-group name="unit">
+                <label>
+                  <radio value="kilogram" checked/>kilogram</label>
+                <label>
+                  <radio value="unit" />unit</label>
+              </radio-group>
+            </view>
+            <view class="btn-area">
+              <button formType="submit">Submit</button>
+              <button formType="reset">Reset</button>
+            </view>
+          </form>
+        </view>
+    </view>
+</view>

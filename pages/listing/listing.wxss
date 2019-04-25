@@ -3,7 +3,7 @@
 .background {
     color: white;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-size: cover !important;
@@ -12,19 +12,21 @@
   .container {
     display: flex;
     display: grid;
-    margin-left: 10px;
+    align-items: center;
   }
 
   .newButton {
   border-radius: 5px;
-  margin-bottom: 35px;
-  background-color: aqua;
+  margin: 20px;
+  background-color:rgb(200, 212, 171);
+  width: 65%;
 }
 
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
+    margin: 5px;
   }
 
   .card {
@@ -51,4 +53,7 @@
   .product-info {
     padding: 8px;
     font-size: 15px;
+    font-weight: bold;
+    color: rgb(218, 216, 216);
+    opacity: 0.6;
   }
