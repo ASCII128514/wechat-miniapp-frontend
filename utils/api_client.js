@@ -35,21 +35,18 @@ const createProduct = function (page) {
       data: {
         "tokens": {
           "token": value
+        },
+        "product": {
+          "unit": page.detail.value.unit,
+          "product_price": page.detail.value.price,
+          "product_name": page.detail.value.name,
+          "picture_url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4266087431,2209117257&fm=200&gp=0.jpg",
+          "description": page.detail.value.description
+        },
+        "quantity": page.detail.value.inventory
         }
-      },
-      success: res => {
-        const newProduct = res.data["product"];
-        console.log(res.data)
-
-        // Update local data
-        page.setData({
-          newProduct: newProduct
-        });
-        console.log(page.data);
-        wx.hideToast();
-      }
-    });
-  }
+      })
+  }    
 } 
 
 export { farmerIndex, createProduct };

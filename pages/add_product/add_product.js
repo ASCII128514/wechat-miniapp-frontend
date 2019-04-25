@@ -8,12 +8,14 @@ Page({
   data: {
 
   },
+  formSubmit: (e) => {
+    createProduct(e);
+  },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    createProduct(this);
   },
 
   /**
