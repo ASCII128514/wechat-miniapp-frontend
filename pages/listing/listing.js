@@ -48,6 +48,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    const page = this
     var value = wx.getStorageSync('token')
     console.log(value)
     if (value) {
@@ -67,7 +68,7 @@ Page({
           this.setData({
             products: products
           });
-
+          console.log(page.data);
           wx.hideToast();
         }
       });
