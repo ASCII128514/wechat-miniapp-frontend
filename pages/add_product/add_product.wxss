@@ -1,1 +1,50 @@
 /* pages/add_product/add_product.wxss */
+
+.background {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page {
+    width: 95%;
+    height: 95%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 75rpx 0;
+    box-sizing: border-box;
+    height: 80vh;
+
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+  }
+
+  .title {
+    padding: 15px;
+    font: bolder;
+    color: black;
+  }
+
+  .newPictureButton {
+    background-color: rgb(200, 212, 171);
+  }
+
+  .section {
+    padding: 10px;
+  }
+
+  .btn-area {
+    padding: 15px;
+    display: flex;
+  }
