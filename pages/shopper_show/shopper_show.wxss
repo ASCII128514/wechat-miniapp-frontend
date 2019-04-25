@@ -1,0 +1,12 @@
+/* pages/shopper_show/shopper_show.wxss */
+.background {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

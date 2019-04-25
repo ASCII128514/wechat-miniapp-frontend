@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/landing/landing",
     "pages/listing/listing",
-    "pages/add_product/add_product"
+    "pages/add_product/add_product",
+    "pages/shopper_listing/shopper_listing",
+    "pages/shopper_show/shopper_show"
   ],
   "window": {
     "backgroundTextStyle": "light",

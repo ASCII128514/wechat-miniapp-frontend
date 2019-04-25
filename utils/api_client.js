@@ -45,11 +45,13 @@ const createProduct = function (page) {
         },
         "quantity": page.detail.value.inventory
         },
-        success: (res) => {
-          console.log(res)
+        success: res => {
+          wx.redirectTo({
+            url: '../listing/listing',
+          })
         }
       })
-  }    
-} 
+  }
+}
 
 export { farmerIndex, createProduct };

@@ -12,6 +12,7 @@ Page({
     createProduct(e);
   },
 
+  
   /**
    * Lifecycle function--Called when page load
    */
