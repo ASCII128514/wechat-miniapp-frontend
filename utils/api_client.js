@@ -44,6 +44,11 @@ const createProduct = function (page) {
           "description": page.detail.value.description
         },
         "quantity": page.detail.value.inventory
+        },
+        success: res => {
+          wx.redirectTo({
+            url: '../listing/listing',
+          })
         }
       })
   }    
