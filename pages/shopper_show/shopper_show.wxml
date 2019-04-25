@@ -15,7 +15,7 @@
         <view>{{product.product_farmer}}</view>
       </view>
       <view class="description"> Description
-        <view>{{product.product_description}}</view>
+        <view>{{product.description}}</view>
       </view>
     
     </view>

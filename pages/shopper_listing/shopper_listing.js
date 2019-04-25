@@ -1,5 +1,6 @@
 // pages/shopper_listing/shopper_listing.js
 import { shopperIndex } from '../../utils/api_client.js';
+import { shopperShow } from '../../utils/api_client.js';
 Page({
 
   /**
@@ -43,6 +44,14 @@ Page({
    */
   onLoad: function (options) {
     shopperIndex(this);
+  },
+
+  //  button to product show page page
+  showProduct: function (res) {
+    shopperShow(res)
+    wx.navigateTo({
+      url: '/pages/shopper_show/shopper_show'
+    })
   },
 
   /**

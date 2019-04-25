@@ -1,24 +1,29 @@
 // pages/shopper_show/shopper_show.js
+// import { shopperShow } from '../../utils/api_client.js';
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    product: {
-      picture_url: "../../Img/listing_1.jpeg",
-      product_name: "Best spinach",
-      product_price: "$49.99",
-      product_description: "the greenest spinach",
-      product_farmer: "Mr. Awesome"
-    },
+    // product: {
+    //   picture_url: "../../Img/listing_1.jpeg",
+    //   product_name: "Best spinach",
+    //   product_price: "$49.99",
+    //   product_description: "the greenest spinach",
+    //   product_farmer: "Mr. Awesome"
+    // },
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    this.setData({ 
+      product: getApp().globalData.productInfo
+    })
+    getApp().globalData.productInfo = null;
+    console.log(this.data.product.product_name)
   },
 
   /**
