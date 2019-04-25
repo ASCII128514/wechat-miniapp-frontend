@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -50,6 +50,21 @@
 					"id": -1,
 					"name": "Add New",
 					"pathName": "pages/add_product/add_product",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Shopper_listing",
+					"pathName": "pages/shopper_listing/shopper_listing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "Shopper_show",
+					"pathName": "pages/shopper_show/shopper_show",
+					"query": "",
 					"scene": null
 				}
 			]
