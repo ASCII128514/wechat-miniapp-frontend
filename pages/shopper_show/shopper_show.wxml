@@ -47,7 +47,7 @@
     <view style='display:flex; height:200rpx; border-bottom:1px solid rgba(255,255,255,0.3); justify-content:center; align-items:center;'>
       <!-- PRICE -->
       <view style=' flex-basis:40vw; text-align:center;'>
-        <text style='font-size:100rpx; font-weight:bolder; color:#515C6F;'>¥50</text>
+        <text style='font-size:100rpx; font-weight:bolder; color:#515C6F;'>¥{{product.product_price}}</text>
       </view>
       <!-- PRICE -->
 
