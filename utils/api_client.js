@@ -82,4 +82,33 @@ const shopperIndex = function (page) {
   }
 } 
 
-export { farmerIndex, createProduct, shopperIndex };
+const shopperShow = function (page) {
+  console.log(page)
+  var value = wx.getStorageSync('token')
+  console.log(value)
+  if (value) {
+    wx.request({
+      url: `http://localhost:3000/api/v1/products/${page.currentTarget.dataset.id}`,
+      method: 'GET',
+      data: {
+        "tokens": {
+          "token": value
+        }
+      },
+      success: res => {
+        console.log(res)
+        const product = res.data["user"];
+        const farmer = res.data["farmer"];
+        console.log(product)
+        getApp().globalData.productInfo = product
+        getApp().globalData.farmerInfo = farmer
+        console.log(getApp().globalData.productInfo)
+        // Update local data
+        console.log(page.data);
+        wx.hideToast();
+      }
+    });
+  }
+} 
+
+export { farmerIndex, createProduct, shopperIndex, shopperShow };

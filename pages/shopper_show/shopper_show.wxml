@@ -12,10 +12,10 @@
     <image class="picture" src="{{product.picture_url}}"></image>
     <view class="product_info">
       <view class="Farmer"> Farmer
-        <view>{{product.product_farmer}}</view>
+        <view>{{farmer.name}}</view>
       </view>
       <view class="description"> Description
-        <view>{{product.product_description}}</view>
+        <view>{{product.description}}</view>
       </view>
     
     </view>
