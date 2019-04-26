@@ -14,6 +14,7 @@ Page({
     //   category: "Vegetable",
     //   picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
     // },
+    buy_num: 0
   },
 
   toCart: function () {
@@ -52,6 +53,37 @@ Page({
     })
 
   },
+  /**
+   * Lifecycle function--Called when page is initially rendered
+   */
+  reduceAmount: function () {
+    let buy_num = this.data.buy_num
+    if (buy_num > 0) {
+      buy_num -= 1
+      this.setData({
+        buy_num: buy_num
+      })
+    }    
+  },
+  
+  increaseAmount: function () {
+    let buy_num = this.data.buy_num
+    buy_num += 1
+    this.setData ({
+      buy_num: buy_num
+    })
+  },
+
+  changeAmount: function (e) {
+    let value = e.detail.value
+    if (value < 0) {
+      value = 0
+    }
+    this.setData ({
+      buy_num: value
+    })
+  },
+  
   /**
    * Lifecycle function--Called when page is initially rendered
    */
