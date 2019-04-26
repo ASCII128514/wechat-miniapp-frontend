@@ -1,7 +1,7 @@
-<!--pages/landing/landing.wxml-->
+<!--pages/landing/landing.wxml page 2-->
 
 
-<view class="background" style="background-image: linear-gradient(-200deg, rgba(0,90,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../Img/landing.png');">
+<view class="background" style="background-image: linear-gradient(-200deg, rgba(0,150,168,0.4) 0%, rgba(0,110,61,0.4) 50%), url('../../Img/landing.png');">
   <view>
     <view class='title'>First, let us know what you want</view>
     <button bindtap="toBuy" class="buyButton">I want to buy</button>

@@ -50,6 +50,17 @@ Page({
    */
   onLoad: function (options) {
     farmerIndex(this);
+  
+
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: '#98c0d6',
+    })
+
+    wx.setNavigationBarTitle({
+      title: 'Your products',
+    })
+
   },
 
   /**

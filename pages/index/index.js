@@ -3,8 +3,6 @@
 const app = getApp()
 
 
-
-
 Page({
   data: {
   },
@@ -16,5 +14,13 @@ Page({
   },
 
   onLoad: function (options) {
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: '#cbdde9',
+    })
+
+    wx.setNavigationBarTitle({
+      title: 'Organic Farming',
+    })
   },
 })

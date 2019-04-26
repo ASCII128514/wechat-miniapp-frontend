@@ -44,6 +44,15 @@ Page({
    */
   onLoad: function (options) {
     shopperIndex(this);
+
+    wx.setNavigationBarColor({
+        frontColor: '#000000',
+      backgroundColor: '#abb1ca',
+      })
+
+      wx.setNavigationBarTitle({
+        title: 'Available today',
+      })
   },
 
   //  button to product show page page

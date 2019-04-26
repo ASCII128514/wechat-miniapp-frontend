@@ -1,1 +1,78 @@
 /* pages/cart/cart.wxss */
+.background {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50rpx;
+    padding-bottom: 10rpx;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+
+  .picture {
+    flex-basis: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+  }
+
+  .product-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
+
+  .product-info {
+    font-weight: bolder;
+    color: #515C6F;
+  }
+
+  .product-price {
+    font-weight bold;
+    color: red;
+  }
+
+  .pay-section {
+    padding-top: 150rpx;
+    padding-left: 80rpx;
+    padding-right: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .total {
+    color: black;
+    font-weight: bold;
+    font-size: 40rpx;
+  }
+
+  .amount {
+    color: black;
+    font-weight: bolder;
+    font-size: 60rpx;
+  }
+
+  .pay-button {
+    border-top-left-radius: 100rpx;
+    border-bottom-left-radius: 100rpx;
+    border-top-right-radius: 100rpx;
+    border-bottom-right-radius: 100rpx;
+    box-shadow:0 4px 4px rgba(255, 105, 105, 0.3), 0 0 40px rgba(255, 105, 105, 0.4) inset;
+    background-color:#FF6969; 
+    width:380rpx; 
+    height:110rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
+    font-weight: bolder;
+  }

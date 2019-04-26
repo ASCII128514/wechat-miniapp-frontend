@@ -1,5 +1,6 @@
 // pages/shopper_show/shopper_show.js
-// import { shopperShow } from '../../utils/api_client.js';
+import { changeFormToOrder, addToCart } from '../../utils/cart_logic.js';
+
 Page({
 
   /**
@@ -14,7 +15,18 @@ Page({
     //   category: "Vegetable",
     //   picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
     // },
-    buy_num: 0
+    buy_num: 1
+  },
+
+  addItemToCart: function (e) {
+    // console.log(333433434, changeFormToOrder)
+    console.log('start order');
+    let order = changeFormToOrder(e,this.data);
+    console.log(order);
+    addToCart(order);
+    wx.redirectTo({
+      url: '/pages/shopper_listing/shopper_listing'
+    })
   },
 
   toCart: function () {
@@ -33,7 +45,7 @@ Page({
     })
 
     wx.setNavigationBarTitle({
-      title: 'The most expensive tomato',
+      title: 'Organic food',
     })
     this.setData({
       product: getApp().globalData.productInfo,
@@ -41,7 +53,7 @@ Page({
     })
     getApp().globalData.productInfo = null;
     getApp().globalData.farmerInfo = null;
-    console.log(this.data.product.product_name)
+    // console.log(this.data.product.product_name)
   },
 
   previewImage: function(e) {
