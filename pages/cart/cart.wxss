@@ -6,7 +6,12 @@
     width: 100%;
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-size: cover !important;
+    display: block;
   }
+
+.cards {
+  border: 1px solid black;
+}
 
   .card {
     display: flex;
@@ -17,9 +22,10 @@
   }
 
   .picture {
-    flex-basis: 35vw;
+    width: 35vw;
     height: 35vw;
     border-radius: 50%;
+    background-size: cover;
   }
 
   .product-section{

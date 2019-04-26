@@ -1,19 +1,20 @@
 <!--pages/shopper_listing/shopper_listing.wxml-->
 <view class="background" style="background-image: linear-gradient(-200deg, rgba(100,100,168,0.5) 0%, rgba(40,100,61,0.5) 50%), url('../../Img/landing.png');">
   <view class="container"> 
-      <view class="newButton"><text>Fresh from the farm</text></view> 
-      <view class="cards">
-          <block wx:for="{{products}}" 
-          wx:for-item="product">
-            <view class="card">
-              <image class="picture" data-id="{{product.id}}" bindtap="showProduct" src="{{product.picture_url}}"></image>
-                <view class="product-info">
-                  <view class="product-name">{{product.product_name}}</view>
-                  <view class="product-price">{{product.product_price}}</view>
-                </view>
-            </view>  
-          </block> 
-      </view>
+      <scroll-view scroll-y class="scroll-view-y" scroll-top="{{scrollTop}}">
+        <view class="cards">
+            <block wx:for="{{products}}" 
+            wx:for-item="product">
+              <view class="card">
+                <image class="picture" data-id="{{product.id}}" bindtap="showProduct" src="{{product.picture_url}}"></image>
+                  <view class="product-info">
+                    <view class="product-name">{{product.product_name}}</view>
+                    <view class="product-price">{{product.product_price}}</view>
+                  </view>
+              </view>  
+            </block> 
+        </view>
+      </scroll-view>
     </view> 
 </view>
 

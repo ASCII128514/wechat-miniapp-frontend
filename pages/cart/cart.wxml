@@ -4,37 +4,24 @@
   <view class="container"> 
       <!-- product display -->
         <view class="cards">
-              <view class="card">
-                <image class="picture" src="{{product.picture_url}}"></image>
-                <view class="product-section">
-                    <view class="product-info">{{product.name}}</view>
-                    <view class="product-info">{{product.quantity}}</view>
-                    <view class="product-price">{{product.price}}</view>
-                  </view>
-              </view> 
-
-              <view class="card">
-                <image class="picture" src="{{product.picture_url}}"></image>
-                <view class="product-section">
-                    <view class="product-info">{{product.name}}</view>
-                    <view class="product-info">{{product.quantity}}</view>
-                    <view class="product-price">{{product.price}}</view>
-                  </view>
-              </view>  
-
-              <view class="card">
-                <image class="picture" src="{{product.picture_url}}"></image>
-                <view class="product-section">
-                    <view class="product-info">{{product.name}}</view>
-                    <view class="product-info">{{product.quantity}}</view>
-                    <view class="product-price">{{product.price}}</view>
-                  </view>
-              </view>     
+          <scroll-view scroll-y class="scroll-view-y" scroll-top="{{scrollTop}}">
+             <block wx:for="{{cart}}" 
+                wx:for-item="product">
+                <view class="card">
+                  <image class="picture" src="{{product.picture_url}}"></image>
+                  <view class="product-section">
+                      <view class="product-info">{{product.name}}</view>
+                      <view class="product-info">{{product.quantity}}</view>
+                      <view class="product-price">{{product.price}}</view>
+                    </view>
+                </view> 
+              </block>
+          </scroll-view>
         </view>
        <!-- product display -->
 
        <!-- Pay section -->
-        <view class="pay-section">
+        <view class="pay-section" style="">
           <view class="pay-price-section">
             <view class="total">TOTAL</view>
             <view class="amount">¥150</view>
