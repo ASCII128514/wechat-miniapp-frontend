@@ -42,9 +42,9 @@
       <view class="dian">
         <view class="cun page_row">Amount:</view>
           <view class="stepper">
-              <text bindtap="bindMinus">-</text>
-                <input type="number" bindchange="pay_num" value="{{buy_num}}" />
-              <text bindtap="bindPlus">+</text>
+              <text bindtap="reduceAmount">-</text>
+                <input style='color:black;' type="number" bindchange="changeAmount" value="{{buy_num}}" />
+              <text bindtap="increaseAmount">+</text>
           </view> 
         </view>
       </view>
