@@ -17,6 +17,14 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: '#669aad',
+    })
+
+    wx.setNavigationBarTitle({
+      title: 'Add a product',
+    })
   },
 
   /**

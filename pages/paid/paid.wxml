@@ -1,0 +1,5 @@
+<!--pages/paid/paid.wxml-->
+
+<image src='https://cdn.abcotvs.com/dip/images/277157_obama3.jpg' class="picture" style="margin-left:20rpx"></image>
+
+<view style="margin:20rpx">Oops! Looks like someone ate your grocery, please order again!</view>
