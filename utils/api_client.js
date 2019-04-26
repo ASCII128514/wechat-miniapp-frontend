@@ -23,11 +23,12 @@ const farmerIndex = function (page) {
       }
     });
   }
-} 
+}
 
-const createProduct = function (page) {
+const createProduct = function (page, p) {
   var value = wx.getStorageSync('token')
-  console.log(value)
+  console.log(value);
+  console.log(p, 123321);
   if (value) {
     wx.request({
       url: `http://localhost:3000/api/v1/product`,
@@ -40,19 +41,19 @@ const createProduct = function (page) {
           "unit": page.detail.value.unit,
           "product_price": page.detail.value.price,
           "product_name": page.detail.value.name,
-          "picture_url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4266087431,2209117257&fm=200&gp=0.jpg",
+          "picture_url": p.data.url,
           "description": page.detail.value.description
         },
         "quantity": page.detail.value.inventory
-        },
-        success: res => {
-          wx.redirectTo({
-            url: '../listing/listing',
-          })
-        }
-      })
+      },
+      success: res => {
+        wx.redirectTo({
+          url: '../listing/listing',
+        })
+      }
+    })
 
-  }    
+  }
 }
 
 const shopperIndex = function (page) {
@@ -80,7 +81,7 @@ const shopperIndex = function (page) {
       }
     });
   }
-} 
+}
 
 const shopperShow = function (page) {
   console.log(page)
@@ -109,6 +110,11 @@ const shopperShow = function (page) {
       }
     });
   }
-} 
+}
 
-export { farmerIndex, createProduct, shopperIndex, shopperShow };
+export {
+  farmerIndex,
+  createProduct,
+  shopperIndex,
+  shopperShow
+};

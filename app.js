@@ -1,4 +1,12 @@
 //app.js
+
+const AV = require('./utils/av-webapp-min')
+const config = require('./secret')
+AV.init({
+  appId: config.appid,
+  appKey: config.secret
+})
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -13,7 +21,7 @@ App({
 
 
 
-    
+
     // 登录
     wx.login({
       success: res => {
@@ -30,39 +38,39 @@ App({
                 "token": value
               }
             },
-          success: (res) => {
-            const token = res.data;
-            console.log(res)
-            // // Update local data
-            // that.setData({
-            //   token
-            // });
+            success: (res) => {
+              const token = res.data;
+              console.log(res)
+              // // Update local data
+              // that.setData({
+              //   token
+              // });
 
-            // wx.hideToast();
+              // wx.hideToast();
             }
           });
         } else {
-                  //Initiate network request to backend (to Paul's thing)
-                  wx.request({
-                    url: 'http://localhost:3000/api/v1/login',
-                    method: 'POST',
-                    header: {
-                      'content-type': 'application/json' // 默认值
-                    },
-                    data: {
-                      code: res.code
-                    },
-                    success: (token) => {
-                      console.log(token.data.authen)
-                      wx.setStorage({
-                        key: 'token',
-                        data: token.data.authen,
-                        success: () => {
-                          console.log('success')
-                        }
-                      })
-                    }
-                  })
+          //Initiate network request to backend (to Paul's thing)
+          wx.request({
+            url: 'http://localhost:3000/api/v1/login',
+            method: 'POST',
+            header: {
+              'content-type': 'application/json' // 默认值
+            },
+            data: {
+              code: res.code
+            },
+            success: (token) => {
+              console.log(token.data.authen)
+              wx.setStorage({
+                key: 'token',
+                data: token.data.authen,
+                success: () => {
+                  console.log('success')
+                }
+              })
+            }
+          })
         }
       }
     })
