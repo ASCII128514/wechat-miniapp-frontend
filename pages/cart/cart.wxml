@@ -24,7 +24,7 @@
           <view class="pay-section" style="">
             <view class="pay-price-section">
               <view class="total">TOTAL:</view>
-              <view class="amount">¥150</view>
+              <view class="amount">{{total}}</view>
             </view>
 
             <view class="pay-button" 

@@ -29,18 +29,23 @@ const addToCart = function (order) {
   cart.push(order);
 }
 
-// const orderTotal = function (cart) {
-//   cart.forEach((product) => {
-//     let totalPrice = 0;
-//     let totalProduct = product.quantity * product.price;
-//     let totalPrice = + totalProduct;
-//   });
-// }
+const orderTotal = function (cart) {
+  let totalPrice = 0;
+  console.log(cart)
+  cart.forEach((product) => {
+    console.log(product)
+    let totalProduct = Number.parseInt(product.quantity.quantity) * Number.parseInt(product.product.price);
+    totalPrice = totalPrice + totalProduct;
+
+  });
+  console.log("price", totalPrice)
+  return totalPrice
+}
 
 module.exports = {
   changeFormToOrder: changeFormToOrder,
-  addToCart: addToCart
-  // orderTotal: orderTotal
+  addToCart: addToCart,
+  orderTotal: orderTotal
 }
 
 

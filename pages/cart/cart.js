@@ -1,5 +1,5 @@
 // pages/cart/cart.js
-// import { orderTotal } from '../../utils/cart_logic.js';
+import { orderTotal } from '../../utils/cart_logic.js';
 let app = getApp()
 let globalData = app.globalData || {}
 
@@ -45,6 +45,9 @@ Page({
     console.log('globaldata', globalData)
     const cart = globalData.cart
     this.setData({ cart })
+
+    const total = orderTotal(cart)
+    this.setData({total})
     
   },
 
