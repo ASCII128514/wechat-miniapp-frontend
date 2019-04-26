@@ -15,21 +15,23 @@ Page({
     //   category: "Vegetable",
     //   picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
     // },
-    buy_num: 1
+    buy_num: 1,
+    cart: getApp().globalData.cart
   },
 
   addItemToCart: function (e) {
-    // console.log(333433434, changeFormToOrder)
-    console.log('start order');
-    let order = changeFormToOrder(e,this.data);
-    console.log(order);
+    let order = changeFormToOrder(this.data);
     addToCart(order);
+    console.log(getApp().globalData.cart, 'test cart');
     wx.redirectTo({
       url: '/pages/shopper_listing/shopper_listing'
     })
   },
 
-  toCart: function () {
+  toCart: function (e) {
+    let order = changeFormToOrder(this.data);
+    addToCart(order);
+    console.log(getApp().globalData.cart, 'test cart');
     wx.navigateTo({
       url: '/pages/cart/cart'
     })

@@ -19,6 +19,7 @@
           </scroll-view>
         </view>
        <!-- product display -->
+       <view class="total">{{cart[0].product.name}}</view>
 
        <!-- Pay section -->
        <view class="fix-position">
