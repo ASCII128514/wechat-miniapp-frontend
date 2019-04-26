@@ -21,16 +21,19 @@
        <!-- product display -->
 
        <!-- Pay section -->
-        <view class="pay-section" style="">
-          <view class="pay-price-section">
-            <view class="total">TOTAL</view>
-            <view class="amount">¥150</view>
-          </view>
+       <view class="fix-position">
+          <view class="pay-section" style="">
+            <view class="pay-price-section">
+              <view class="total">TOTAL</view>
+              <view class="amount">¥150</view>
+            </view>
 
-          <view class="pay-button" style="background-color:red" bindtap="toPaid">
-            PAY
+            <view class="pay-button" 
+              style="background-color:red" bindtap="toPaid">
+              PAY
+            </view>
           </view>
-        </view>
+      </view>
 
        <!-- Pay section -->
 

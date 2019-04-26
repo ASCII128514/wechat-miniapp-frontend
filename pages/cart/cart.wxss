@@ -56,6 +56,14 @@
     align-items: center;
   }
 
+  .fix-position {
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 20px;
+  }
+
   .total {
     color: black;
     font-weight: bold;
