@@ -32,7 +32,7 @@ Page({
     })
 
     wx.setNavigationBarTitle({
-      title: 'The most expensive tomato',
+      title: 'Organic food',
     })
     this.setData({
       product: getApp().globalData.productInfo,

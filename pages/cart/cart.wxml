@@ -40,7 +40,7 @@
             <view class="amount">¥150</view>
           </view>
 
-          <view class="pay-button" style="background-color:red">
+          <view class="pay-button" style="background-color:red" bindtap="toPaid">
             PAY
           </view>
         </view>

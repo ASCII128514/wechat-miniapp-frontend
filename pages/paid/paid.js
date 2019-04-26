@@ -1,4 +1,4 @@
-// pages/landing/landing.js
+// pages/paid/paid.js
 Page({
 
   /**
@@ -7,33 +7,11 @@ Page({
   data: {
 
   },
- 
-//  button to sell page
-  toSell: function () {
-    wx.navigateTo({
-      url: '/pages/listing/listing'
-    })
-  },
-
-  //  button to buy page
-  toBuy: function () {
-    wx.navigateTo({
-      url: '/pages/shopper_listing/shopper_listing'
-    })
-  },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    wx.setNavigationBarColor({
-      frontColor: '#000000',
-      backgroundColor: '#98d1d2',
-    })
-
-    wx.setNavigationBarTitle({
-      title: 'Organic Farming',
-    })
 
   },
 

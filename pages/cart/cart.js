@@ -14,8 +14,13 @@ Page({
       picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
       quantity: "1 kilo",
     },
-
   },
+    toPaid: function () {
+      wx.navigateTo({
+        url: '/pages/paid/paid'
+      })
+    },
+  
 
   /**
    * Lifecycle function--Called when page load
@@ -23,12 +28,13 @@ Page({
   onLoad: function (options) {
     wx.setNavigationBarColor({
       frontColor: '#000000',
-      backgroundColor: '#f4e5e5',
-    })
+      backgroundColor: '#f4e5e5'
+    });
 
     wx.setNavigationBarTitle({
-      title: 'Shopping Cart',
+      title: 'Shopping Cart'
     })
+
 
   },
 
@@ -79,5 +85,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
 })
