@@ -5,21 +5,19 @@
       <!-- product display -->
         <view class="cards">
           <scroll-view scroll-y class="scroll-view-y" scroll-top="{{scrollTop}}">
-             <block wx:for="{{cart}}" 
-                wx:for-item="product">
+             <block wx:for="{{cart}}">
                 <view class="card">
-                  <image class="picture" src="{{product.picture_url}}"></image>
+                  <image class="picture" src="{{item.product.url}}"></image>
                   <view class="product-section">
-                      <view class="product-info">{{product.name}}</view>
-                      <view class="product-info">{{product.quantity}}</view>
-                      <view class="product-price">{{product.price}}</view>
+                      <view class="product-info">{{item.product.name}}</view>
+                      <view class="product-info">{{item.quantity.quantity}}</view>
+                      <view class="product-price">¥{{item.product.price}}</view>
                     </view>
                 </view> 
               </block>
           </scroll-view>
         </view>
        <!-- product display -->
-       <view class="total">{{cart[0].product.name}}</view>
 
        <!-- Pay section -->
        <view class="fix-position">

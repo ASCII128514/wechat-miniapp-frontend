@@ -4,7 +4,7 @@ const changeFormToOrder = function (e, data={}) {
   const price = e.product.product_price || '0'
   const name = e.product.product_name || 'None'
   const url = e.product.picture_url || 'None'
-  const quantity = data.buy_num || '0'
+  const quantity = e.buy_num || '0'
 
   const order = {
     product: {

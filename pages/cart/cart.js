@@ -1,4 +1,7 @@
 // pages/cart/cart.js
+let app = getApp()
+let globalData = app.globalData || {}
+
 Page({
 
   /**
@@ -14,7 +17,7 @@ Page({
       picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
       quantity: "1 kilo",
     },
-    cart: getApp().globalData.cart
+    cart: []
   },
 
     toPaid: function () {
@@ -37,9 +40,11 @@ Page({
       title: 'Shopping Cart'
     })
 
-    console.log(1, this.data.cart);
-
-
+    // Copy cart from globalData to data
+    console.log('globaldata', globalData)
+    const cart = globalData.cart
+    this.setData({ cart })
+    
   },
 
   /**
@@ -53,7 +58,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    console.log('test', this)
   },
 
   /**
