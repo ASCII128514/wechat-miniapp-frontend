@@ -14,7 +14,9 @@ Page({
       picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
       quantity: "1 kilo",
     },
+    cart: getApp().globalData.cart
   },
+
     toPaid: function () {
       wx.navigateTo({
         url: '/pages/paid/paid'
@@ -34,6 +36,8 @@ Page({
     wx.setNavigationBarTitle({
       title: 'Shopping Cart'
     })
+
+    console.log(1, this.data.cart);
 
 
   },

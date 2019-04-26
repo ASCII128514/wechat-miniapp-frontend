@@ -1,9 +1,9 @@
 const changeFormToOrder = function (e, data={}) {
-  const detail = e.detail.value || {}
-  const unit = e.detail.unit || 'kg'
-  const price = e.detail.price || '0'
-  const name = e.detail.name || 'None'
-  const url = e.detail.url || 'None'
+  const detail = e.product.description || {}
+  const unit = e.product.unit || 'kg'
+  const price = e.product.product_price || '0'
+  const name = e.product.product_name || 'None'
+  const url = e.product.picture_url || 'None'
   const quantity = data.buy_num || '0'
 
   const order = {
