@@ -60,7 +60,7 @@
     bottom: 5px;
     left: 0px;
     right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .total {
