@@ -29,10 +29,20 @@ const addToCart = function (order) {
   cart.push(order);
 }
 
+// const orderTotal = function (cart) {
+//   cart.forEach((product) => {
+//     let totalPrice = 0;
+//     let totalProduct = product.quantity * product.price;
+//     let totalPrice = + totalProduct;
+//   });
+// }
+
 module.exports = {
   changeFormToOrder: changeFormToOrder,
   addToCart: addToCart
+  // orderTotal: orderTotal
 }
+
 
 // const app = getApp();
 // let globalData = app.globalData

@@ -1,4 +1,5 @@
 // pages/cart/cart.js
+// import { orderTotal } from '../../utils/cart_logic.js';
 let app = getApp()
 let globalData = app.globalData || {}
 

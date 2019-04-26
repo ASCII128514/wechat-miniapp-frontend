@@ -10,8 +10,8 @@
                   <image class="picture" src="{{item.product.url}}"></image>
                   <view class="product-section">
                       <view class="product-info">{{item.product.name}}</view>
-                      <view class="product-info">{{item.quantity.quantity}}</view>
-                      <view class="product-price">¥{{item.product.price}}</view>
+                      <view class="product-info">Amount: {{item.quantity.quantity}} {{item.product.unit}}</view>
+                      <view class="product-price">Price: ¥{{item.product.price}}</view>
                     </view>
                 </view> 
               </block>
@@ -23,7 +23,7 @@
        <view class="fix-position">
           <view class="pay-section" style="">
             <view class="pay-price-section">
-              <view class="total">TOTAL</view>
+              <view class="total">TOTAL:</view>
               <view class="amount">¥150</view>
             </view>
 
