@@ -6,7 +6,7 @@
       <view>
         <view class='title'>BroFarm</view>
         <text class='teaser'>The best way to get your organic foods</text>
-        <button class='button' bindtap="buttonClicked">Get started!</button>
+        <button class='button' bindtap="buttonClicked">Get started</button>
       </view>
       <!-- Main text -->
 </view>
