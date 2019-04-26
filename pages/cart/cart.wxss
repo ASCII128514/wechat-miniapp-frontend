@@ -6,11 +6,11 @@
     width: 100%;
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-size: cover !important;
-    display: block;
+    position:absolute;
+    overflow-y: scroll;
   }
 
 .cards {
-  border: 1px solid black;
 }
 
   .card {
@@ -53,6 +53,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .fix-position {
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 20px;
   }
 
   .total {
