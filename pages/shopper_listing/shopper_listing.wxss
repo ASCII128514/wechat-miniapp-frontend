@@ -13,3 +13,46 @@
     position:absolute;
     overflow-y: scroll;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    margin: 5px;
+  }
+
+  .card {
+    border-radius: 1px;
+    border: 1px solid green;
+    border-radius: 5px;
+  }
+
+  .picture {
+    width: 23vh;
+    height: 20vh;
+    background-size: cover;
+  }
+
+    .product-img {
+      color: white;
+      text-align:;
+      height: 20vh;
+      width: 100%;
+      /* if you have a 70px navbar => height: calc(100vh - 70px); */
+      background-size: cover !important;
+  }
+
+  .product-info {
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(218, 216, 216);
+    opacity: 0.6;
+  }
