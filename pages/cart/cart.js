@@ -5,6 +5,15 @@ Page({
    * Page initial data
    */
   data: {
+    product: {
+      name: "Best tomatoes",
+      price: "¥49.99",
+      description: "the greenest spinach",
+      farmer: "Mr. Awesome",
+      category: "Vegetable",
+      picture_url: "http://s3.sinaimg.cn/mw690/001JgdvWgy6I0IQtqUie2&690",
+      quantity: "1 kilo",
+    },
 
   },
 
@@ -12,6 +21,14 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: '#f4e5e5',
+    })
+
+    wx.setNavigationBarTitle({
+      title: 'Shopping Cart',
+    })
 
   },
 
