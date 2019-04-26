@@ -63,7 +63,7 @@
         <view style='display:flex; justify-content:center;'>
           <view class='cart-button'>
               <view class="button-position">
-                <view class="cart_text" >ADD</view>
+                <view class="cart_text" bindtap='addItemToCart' >ADD</view>
               </view>
           </view>
           <view class='buy-button'>
