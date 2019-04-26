@@ -47,12 +47,14 @@
   }
 
   .pay-section {
-    padding-top: 150rpx;
+    padding-top: 10rpx;
     padding-left: 80rpx;
     padding-right: 30rpx;
+    padding-bottom: 15rpx;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #e1d5d4;
   }
 
   .fix-position {
